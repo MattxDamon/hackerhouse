@@ -1,0 +1,42 @@
+/*Hackerhouse CSS*/
+
+*{
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+}
+
+body{
+	background-color:#FFB33F;
+}
+
+.center{
+	text-align:center;
+}
+
+.bioPic{
+}
+
+.col-centered{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.companyBio{
+	display:inline;
+}
+
+.companyBio h2{
+
+}
+
+.donateBtn{
+	color:white;
+	background-color:black;
+}
+
+@media screen and (max-width: 300px) {
+	companyBioText{
+		text-align:center;
+	}
+}
