@@ -15,6 +15,7 @@ p, blockquote, pre,
 ul, ol, dl, figure, hr {
     margin: 0;
     padding: 0;
+    display: block;
     margin-bottom: $spacing-unit;
     text-rendering: optimizeLegibility;
 }
@@ -48,6 +49,9 @@ p, .p {
 }
 .yellow-text {
   color: $yellow;
+}
+.strikethrough {
+  text-decoration: line-through;
 }
 small, .small {
     font: normal 400 14px/2.1429 $body-font;
@@ -99,12 +103,10 @@ ul, ol {
 @media screen and (max-width:768px) {
   h1, .h1 {
       font: normal 700 48px/1.25 $header-font;
-      color: $header-color;
   }
 
   h2, .h2 {
       font: normal 400 32px/1.875 $header-font;
-      color: $header-color;
   }
 
   h3, .h3 {
@@ -116,6 +118,5 @@ ul, ol {
   }
   .huge {
     font: normal 700 64px/1.4063 $header-font;
-    color: $header-color;
   }
 }

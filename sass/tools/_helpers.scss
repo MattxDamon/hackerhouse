@@ -70,7 +70,7 @@
     }
 
     .primary-text {
-        color: $primary;
+        color: $primary !important;
     }
 
     .accent-text {
@@ -93,4 +93,35 @@
 
   //Borders
     .no-borders {
-      border: 0 !important;    }
+      border: 0 !important;
+    }
+
+
+  //Shadows
+    .box-shadow {
+      box-shadow: 3px 3px 3px rgba(34, 34, 34, 0.6);
+    }
+    .small-box-shadow {
+      box-shadow: 1px 1px 1px rgba(34, 34, 34, 0.6);
+    }
+    .text-shadow {
+      text-shadow: 3px 3px 3px rgba(34, 34, 34, 0.6);
+    }
+
+    .small-text-shadow {
+      text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.4);
+    }
+
+  //Margins
+    .margin-t-sm {
+      margin-top: $spacing-unit;
+    }
+    .margin-r-sm {
+      margin-right: $spacing-unit;
+    }
+    .margin-b-sm {
+      margin-bottom: $spacing-unit;
+    }
+    .margin-l-sm {
+      margin-left: $spacing-unit;
+    }
