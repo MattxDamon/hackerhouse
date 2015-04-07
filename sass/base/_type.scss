@@ -23,17 +23,14 @@ ul, ol, dl, figure, hr {
    ========================================================================== */
 h1, .h1 {
     font: normal 700 64px/1.4063 $header-font;
-    color: $header-color;
 }
 
 h2, .h2 {
     font: normal 700 48px/1.25 $header-font;
-    color: $header-color;
 }
 
 h3, .h3 {
     font: normal 400 32px/1.875 $header-font;
-    color: $header-color;
 }
 
 p, .p {
@@ -41,7 +38,7 @@ p, .p {
 }
 
 .huge {
-  font: normal 700 120px/1 $header-font;
+    font: normal 700 120px/1 $header-font;
 }
 .text-shadow {
   text-shadow: 3px 3px 3px rgba($black, .6);
