@@ -37,7 +37,7 @@ body{
 	background-color:black;
 }
 
-@media screen and (max-width: 300px) {
+@media (max-width: 300px) {
 	companyBioText{
 		text-align:center;
 	}
