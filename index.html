@@ -51,9 +51,10 @@
     <div class="grid">
       <section class="unit half centered">
         <hr class="transparent">
+
         <h2 class="primary-text"> $25,000 Will Help Us To Work, Build, Grow.</h2>
           <p> Help us raise money to take Ant Hill to the next level. We're raising $25,000 so we can live, work and continue to build Ant Hill as the number one website that college students use to find work. By connecting students within the community where they go to school, we will also help build lasting connections and community involvement.  We're raising $25,000 for <a href="#">these reasons</a>.  Take a look at who we are or head right to our <a href="#">donation page</a>.</p>
-          <p>Ant Hill is community minded, so this summer we're opening our doors, giving back to our hometown in a creative way, and documenting the whole experience.</p>
+          <p>Ant Hill is community minded, so this summer we're opening our doors, giving back to our hometown in a 
       </section>
     </div>
 
@@ -213,6 +214,7 @@
       </section>
 
       <section class="unit half centered cf align-center">
+        <a name="financials"></a>
         <hr>
         <h2>Financial Breakdown</h2>
         <div class="unit one-third">
@@ -247,7 +249,7 @@
         </div>
         
       </section>
-
+    </div>
       <!-- <section class="unit half centered">
         <hr>
         <h2>Our Philosophy</h2>
@@ -264,6 +266,7 @@
       </footer>
     </div>
 
+    <script src="js/jquery.min.js"></script>
     <script src="js/retina.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
@@ -275,6 +278,22 @@
         paginationClickable: true,
         spaceBetween: 30,
         loop: true
+      });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
       });
     </script>
   </body>
