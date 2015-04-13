@@ -50,7 +50,7 @@
       <section class="unit half centered">
         <hr class="transparent">
         <h2 class="primary-text">Raising $25k, working hard, and giving back!</h2>
-          <p>Anthill is the place students go to find work and businesses go to workers for short term jobs.  Help us take Anthill to the next level.  We're raising $25,000 for <a href="#">these reasons</a>.  Take a look at who we are or head right to our <a href="#">donation page</a>.</p>
+          <p>Anthill is the place students go to find work and businesses go to workers for short term jobs.  Help us take Anthill to the next level.  We're raising $25,000 for <a href="#financials">these reasons</a>.  Take a look at who we are or head right to our <a href="#">donation page</a>.</p>
           <p>Anthill is first and foremost community minded.  We're made by students for students, but we don't discriminate against age.  Everyone needs experience and everyone needs to work.  We are dedicated to helping the past, present, and future generations learn skills, work hard and get a taste of what it's like to be in the tech field. That's why we're opening our doors, giving back to the community in a creative way, and documenting the whole summer.</p>
       </section>
     </div>
@@ -211,6 +211,7 @@
       </section>
 
       <section class="unit half centered cf align-center">
+        <a name="financials"></a>
         <hr>
         <h2>Financial Breakdown</h2>
         <div class="unit one-third">
@@ -245,7 +246,7 @@
         </div>
         
       </section>
-
+    </div>
       <!-- <section class="unit half centered">
         <hr>
         <h2>Our Philosophy</h2>
@@ -262,6 +263,7 @@
       </footer>
     </div>
 
+    <script src="js/jquery.min.js"></script>
     <script src="js/retina.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
@@ -273,6 +275,22 @@
         paginationClickable: true,
         spaceBetween: 30,
         loop: true
+      });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
       });
     </script>
   </body>
