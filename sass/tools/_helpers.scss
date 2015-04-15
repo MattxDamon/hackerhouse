@@ -133,3 +133,10 @@
     .margin-l-sm {
       margin-left: $spacing-unit;
     }
+
+
+    .hide-text {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }

@@ -114,6 +114,11 @@
 .margin-l-sm {
   margin-left: 30px; }
 
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
 /* Base */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -4176,10 +4181,7 @@ Copyright (c) 2014 Daniel Eden
   box-shadow: 0 0 0 3px, 0 0 0 2px inset;
   -o-border-radius: 50%;
   border-radius: 50%;
-  border: 6px solid transparent;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  border: 6px solid transparent; }
 
 .icono-signIn {
   width: 18px;
@@ -4406,9 +4408,6 @@ Copyright (c) 2014 Daniel Eden
   position: absolute;
   width: 24px;
   height: 7px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   border-top: none;
   border-right: none;
   left: -2px;
@@ -4527,10 +4526,7 @@ Copyright (c) 2014 Daniel Eden
   top: -7px;
   right: -7px;
   border-top: none;
-  border-right: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  border-right: none; }
 
 .icono-crop:after {
   position: absolute;
@@ -5985,7 +5981,6 @@ Copyright (c) 2014 Daniel Eden
   vertical-align: middle;
   position: relative;
   font-style: normal;
-  color: #828282;
   text-align: left;
   text-indent: -9999px;
   direction: ltr; }
@@ -6007,11 +6002,6 @@ Copyright (c) 2014 Daniel Eden
   width: 30px;
   height: 30px;
   margin: 2px; }
-
-[class*=icono-], [class*=icono-] * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
 
 /**
  * Swiper 3.0.6
