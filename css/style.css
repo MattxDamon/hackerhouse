@@ -828,7 +828,7 @@ ul, ol {
  HERO INTRO IMAGE
  ========================================================================== */
 .hero-image {
-  background-image: url("../img/surf.jpg");
+  background-image: url("../img/saratoga.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
